@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
 $('#tweet-controls').hide();
 $('.tweet-actions').hide();
 $('.stats').hide();
@@ -54,11 +56,13 @@ $newtweet.find('.username').text('@kurtc14');
 var textFromCompose = $('.tweet-compose').val();
 $newtweet.find('.tweet-text').text(textFromCompose);
 $newtweet.find('.stats').attr('class', 'stats');
+$('.tweet-compose').val("");
 
 ($newtweet).prependTo('#stream');
   $('.tweet-actions').hide();
   $('.stats').hide();
   $('.stats', this).show();
+
 
 
 });
